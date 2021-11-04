@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E COMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body> 
+    <div>
+        
+    <h1> <img src="4.png"width="100px" height="50px" >SALE POINT</h1></div>
+    <div>
+        <ul>
+        <li><a class="active" href="1.html">Home</a></li>
+        <li><a href="item.html">Item Lists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+      </div>
+     <div style="float: left;">
+       <div style="float: right; text-align: center;">
+        <h1 style="font-size: 30px;">
+           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp SHOP YOUR NEEDS HERE!
+        </h1>
+        <h4>Awesome product pictures. Mobile friendly. Easy.</h4><br>
+        <button class="btn" type="button" value="button" ><a href="item.html">SHOP HERE</a></button>
+        </div>
+      <img class="mySlides" src="1.png" width="700px"height="500px">
+<img class="mySlides" src="2.png"width="700px"height="500px">
+<img class="mySlides" src="3.jpg"width="700px" height="500px">
+<img class="mySlides" src="2.png"width="700px"height="500px">
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    
+    </script>
+    
+</div>
+
+</body>
+</html>
